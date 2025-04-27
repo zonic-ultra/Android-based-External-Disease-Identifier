@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EXDI-TECH</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string name="capstone_title">Android-based External\nDisease Identifier\nFor CVM Laboratory</string>
+    <string name="student_id">Student ID</string>
+    <string name="name">Student Name</string>
+    <string name="time_of_seen">Time of Entry</string>
+    <string name="purpose_in_lab">Laboratory Purpose</string>
+    <string name="time_schedule">Laboratory Schedule</string>
+</resources>

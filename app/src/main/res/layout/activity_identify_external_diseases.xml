@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg2"
+    android:outlineSpotShadowColor="@color/black"
+    tools:context=".Controller.Admin.Disease_Identification.Identify_External_Diseases">
+
+    <Spinner
+        android:id="@+id/animalSelector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="153dp"
+        android:background="@drawable/image_view_bg_result"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <Button
+        android:id="@+id/uploadModelButton"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/intro_start_btn"
+        android:fontFamily="@font/text_font_style_light"
+        android:text="Upload Model"
+        android:letterSpacing="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/animalSelector" />
+
+    <Button
+        android:id="@+id/uploadLabelsButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_width="500dp"
+        android:background="@drawable/intro_start_btn"
+        android:fontFamily="@font/text_font_style_light"
+        android:text="Upload labels"
+        android:letterSpacing="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uploadModelButton" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/btn_gallery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/openCameraButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/btn_camera"
+        android:layout_marginStart="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/gradient_bg2"
+        android:fontFamily="@font/title_font_style"
+        android:text="Predict"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/openCameraButton" />
+
+
+<!--    <TextView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:fontFamily="@font/text_font_style_light"-->
+<!--        android:gravity="start"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:padding="16dp"-->
+<!--        android:text="Disclaimer: Some external diseases in animals are not part of the identification feature yet. We will include it for next app update."-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.576"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="533dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:letterSpacing=".1"
+            android:scrollIndicators="bottom"
+            android:scrollbars="vertical"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

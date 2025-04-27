@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Controller.SecondFromSlide"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/form_bg"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/form_bg" />
+
+
+    <EditText
+        android:id="@+id/edit_text_purpose_in_lab"
+        android:layout_below="@+id/purpose_in_lab"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="62dp"
+        android:textSize="15sp"
+        android:hint="ex. finding treatment"
+        android:textColorHint="#aaa"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/purpose_in_lab" />
+
+    <TextView
+        android:id="@+id/purpose_in_lab"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_time_of_seen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="151dp"
+        android:text="@string/purpose_in_lab"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_time_of_seen" />
+
+    <TextView
+        android:id="@+id/time_of_seen"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/form_bg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="149dp"
+        android:text="@string/time_of_seen"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/form_bg" />
+
+    <EditText
+        android:id="@+id/edit_text_time_of_seen"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_of_seen"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="62dp"
+        android:textSize="15sp"
+        android:hint="ex. 2024/12/18 11:37"
+        android:textColorHint="#aaa"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/time_of_seen" />
+
+    <TextView
+        android:id="@+id/time_schedule"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_text_time_schedule"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="130dp"
+        android:text="@string/time_schedule"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_purpose_in_lab" />
+
+    <EditText
+        android:id="@+id/edit_text_time_schedule"
+        android:layout_alignBottom="@+id/form_bg"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="62dp"
+        android:textSize="15sp"
+        android:hint="ex. 1pm to 5pm"
+        android:textColorHint="#aaa"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/time_schedule" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit_btn"
+        android:paddingStart="30dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="3dp"
+        android:layout_marginStart="162dp"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textColor="#aaaaaa"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:layout_marginTop=".5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_time_schedule" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_info_top_ui_design" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/form_bg"
+        app:srcCompat="@drawable/user_info_ui_bottom_design" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_time_schedule"
+        app:srcCompat="@drawable/inactive_dash" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_time_schedule"
+        app:srcCompat="@drawable/active_dash" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

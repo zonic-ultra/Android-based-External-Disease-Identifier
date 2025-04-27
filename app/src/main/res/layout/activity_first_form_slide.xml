@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Controller.FirstFormSlide"
+    app:boxStrokeColor="#ffffff"
+    android:background="@drawable/gradient_bg">
+
+    <ImageView
+        android:id="@+id/form_bg"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/form_bg" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_text_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="155dp"
+        android:text="@string/name"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_student_id" />
+
+    <EditText
+        android:id="@+id/edit_text_student_id"
+        android:layout_above="@+id/name"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="62dp"
+        android:textSize="15sp"
+        android:hint="ex. 213018"
+        android:textColorHint="#aaa"
+        android:inputType="number"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/student_id" />
+
+    <TextView
+        android:id="@+id/student_id"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_text_student_id"
+        android:layout_alignTop="@+id/form_bg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="159dp"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:text="@string/student_id"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/form_bg" />
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignBottom="@+id/form_bg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="66dp"
+        android:textSize="15sp"
+        android:hint=" Surname, Firstname"
+        android:textColorHint="#aaa"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/btn_admin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/admin_btn"
+        android:paddingStart="30dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="8dp"
+        android:text="Admin"
+        android:textColor="#000"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="189dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/submit_btn"
+        android:paddingStart="30dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="8dp"
+        android:text="Next>"
+        android:textColor="#aaaaaa"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+       android:layout_marginBottom="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bone" />
+
+    <TextView
+        android:id="@+id/imageView6"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:text="Fill out"
+        android:textColor="@color/black"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_info_top_ui_design" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/form_bg"
+        app:srcCompat="@drawable/user_info_ui_bottom_design" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name"
+        app:srcCompat="@drawable/active_dash" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/form_bg"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name"
+        app:srcCompat="@drawable/inactive_dash" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

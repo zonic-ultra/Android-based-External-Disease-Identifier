@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg2"
+    tools:context=".Controller.TreatmentSuggestion">
+
+    <EditText
+        android:id="@+id/conditionInput"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Enter medical condition"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/suggestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_effect_search"
+        android:padding="15dp"
+        android:layout_marginTop="150dp"
+        android:text="Get Suggestion"
+        android:textColor="#022503"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conditionInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested Treatment:"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conditionInput" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="256dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2">
+
+        <TextView
+            android:id="@+id/suggestionOutput"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:letterSpacing=".1"
+            android:scrollIndicators="bottom"
+            android:scrollbars="vertical"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/view_EDA_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="View Available External Diseases"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textColor="#010145"
+        android:shadowColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/conditionInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

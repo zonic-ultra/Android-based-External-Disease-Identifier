@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.Admin.RecordHistoryAdmin"
+    android:background="@drawable/gradient_bg">
+
+    <ImageView
+        android:id="@+id/form_bg"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="510dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/form_bg" />
+
+    <ImageView
+        android:id="@+id/form_bg1"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/form_bg2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/form_bg"
+        app:srcCompat="@drawable/form_bg" />
+
+    <ImageView
+        android:id="@+id/form_bg2"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:srcCompat="@drawable/form_bg" />
+
+    <Button
+        android:id="@+id/searchByStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="660dp"
+        android:background="@drawable/button_effect_search2"
+        android:textColor="#3D7EB6"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:text="Search"
+        android:layout_marginLeft="245dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_student_id"
+        android:layout_width="255dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="605dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="number"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_record_history"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="View Record History"
+        android:layout_marginBottom="350dp"
+        android:background="#4B5669"
+        android:textColor="#fff"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editVisitId"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/deleteVisitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteVisitButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Lab Visit"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/button_effect"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textColor="#D0F12823"
+        app:layout_constraintBottom_toTopOf="@+id/studentIdLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/visitIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="Enter Visit ID to Delete Laboratory Visit:"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/deleteVisitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/studentIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        android:text="Enter Student ID to Delete Student Record:"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/deleteStudentRecordButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editStudentId"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/deleteStudentRecordButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteStudentRecordButton"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Student Record"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_effect"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:fontFamily="@font/text_font_style_light"
+        android:textSize="18sp"
+        android:textColor="#D0F12823"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomEditText" parent="Widget.MaterialComponents.TimePicker.Display.TextInputEditText" >
+        <item name="colorControlNormal">#000000</item>
+    </style>
+    <color name="teal_200">#000000</color>
+    <color name="black">#13131a</color>
+    <color name="white">#aaaaaa</color>
+    <color name="bg_color1">#000000</color>
+    <color name="bg_color2">#f0f0f5</color>
+    <color name="bg_color3">#410088</color>
+    <color name="bg_color4">#158582</color>
+    <color name="bg_color5">#BF2E6577</color>
+    <color name="font_color">#f0f0f5</color>
+</resources>

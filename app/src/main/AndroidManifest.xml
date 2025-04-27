@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Specifies screen support for the entire app -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/final_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/final_logo_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ABEDI"
+        tools:targetApi="31">
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Identify_External_Diseases"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Goat"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Swine"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Rabbit"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Cat"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Category"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.Disease_Identification.Dog"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Admin.ChangePassword"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.Admin.AdminPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.TreatmentSuggestion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.Admin.AdminLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.Admin.IdentifyDisease"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.Admin.RecordHistoryAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Controller.Admin.TreatmentSuggestionAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Model.UserDataModel"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.SecondFromSlide"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.FirstFormSlide"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.Menu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.IntroStart"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:autoMirrored="true" android:height="922.5dp" android:viewportHeight="822.5" android:viewportWidth="840" android:width="940dp">
+
+    <!--    <stroke android:color="@color/black" android:width="1dp"/>-->
+    <solid android:color="#83A09BB5"/>
+    <corners android:radius="10dp"/>
+
+
+    <!--    <path android:fillColor="#fff" android:pathData="M31.82,0L808.18,0A31.82,31.82 0,0 1,840 31.82L840,790.68A31.82,31.82 0,0 1,808.18 822.5L31.82,822.5A31.82,31.82 0,0 1,0 790.68L0,31.82A31.82,31.82 0,0 1,31.82 0z"/>-->
+
+</shape>
